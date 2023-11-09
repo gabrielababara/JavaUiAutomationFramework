@@ -17,6 +17,7 @@ public class DriverManager {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("ignore-certificate-errors");
                 options.addArguments("--start-maximized");
+                options.addArguments("--incognito");
                 driver = new ChromeDriver(options);
                 System.out.println("The Chrome driver is initiated.");
                 break;
@@ -49,6 +50,7 @@ public class DriverManager {
     public void tearDown(){
         driver.close();
         driver.quit();
+        instance = null;
         driver = null;
     }
 }
