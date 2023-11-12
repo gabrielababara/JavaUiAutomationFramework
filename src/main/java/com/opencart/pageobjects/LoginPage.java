@@ -9,11 +9,11 @@ public class LoginPage extends Page {
     public LoginPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//input[@id='input-email']")
+    @FindBy(id = "input-email")
     private WebElement usernameInput;
-    @FindBy(xpath = "//input[@id='input-password']")
+    @FindBy(id = "input-password")
     private WebElement passwordInput;
-    @FindBy(xpath = "//button[@type='submit']")
+    @FindBy(css = "button[type='submit']")
     private WebElement loginBtn;
 
     public void fillInTheLoginFrom(String username, String password){

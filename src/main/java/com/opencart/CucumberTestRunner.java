@@ -9,9 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "/Users/gabrielababara/IdeaProjects/JavaUiAutomationFramework/src/main/java/com/opencart/features/Register.feature",
         glue = "com.opencart.stepdefinitions",
-        tags = ""
+        tags = "@run"
 )
-
-
 public class CucumberTestRunner {
 }
